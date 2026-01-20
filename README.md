@@ -1,13 +1,22 @@
-# Harvey Specter — UAE Practice
+# Harvey Specter — Legal AI Skills
 
 > **"I don't play the odds, I play the man."**
 
-Your closer for UAE legal questions. Elite legal AI that actually answers instead of telling you to "consult a lawyer" for everything.
+Your closer for legal questions. Elite legal AI skills that actually answer instead of telling you to "consult a lawyer" for everything.
 
 [![Author: Keswin](https://img.shields.io/badge/Author-Keswin%20Suresh-blue.svg)](https://x.com/keswins)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
-[![Jurisdiction: UAE](https://img.shields.io/badge/Jurisdiction-UAE-red.svg)]()
+[![Skills: 2](https://img.shields.io/badge/Skills-2-purple.svg)]()
 [![Updated: Jan 2026](https://img.shields.io/badge/Updated-Jan%202026-yellow.svg)]()
+
+---
+
+## Available Skills
+
+| Skill | Jurisdiction | Coverage |
+|-------|--------------|----------|
+| **harvey-specter-uae** | UAE, DIFC, ADGM | Startup formation, healthcare licensing, employment, contracts |
+| **harvey-specter-usa** | USA (Delaware default) | Delaware incorporation, employment, contracts, IP/trademark |
 
 ---
 
@@ -18,23 +27,44 @@ Your closer for UAE legal questions. Elite legal AI that actually answers instea
 │                     USE AT YOUR OWN RISK                        │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
-│  This skill provides LEGAL INFORMATION only.                    │
+│  These skills provide LEGAL INFORMATION only.                   │
 │                                                                 │
 │  ❌  This is NOT legal advice                                   │
 │  ❌  This does NOT create an attorney-client relationship       │
 │  ❌  This is NOT a substitute for a licensed attorney           │
 │                                                                 │
-│  ✅  ALWAYS consult a qualified UAE lawyer before acting        │
+│  ✅  ALWAYS consult a qualified lawyer before acting            │
 │  ✅  Laws change frequently — verify everything                 │
 │  ✅  Your situation has unique factors not covered here         │
 │                                                                 │
 │  The author (Keswin Suresh) assumes NO LIABILITY for any        │
-│  decisions you make based on this skill's output.               │
+│  decisions you make based on these skills' output.              │
 │                                                                 │
 │  Fork it. Build on it. Make it better.                          │
 │  But get a real lawyer before you sign anything.                │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Installation
+
+```bash
+# Add the marketplace
+claude plugin marketplace add kess-1995/harvey-specter-uae
+
+# Install UAE skill
+claude plugin install harvey-specter-uae@harvey-specter-marketplace
+
+# Install USA skill
+claude plugin install harvey-specter-usa@harvey-specter-marketplace
+```
+
+Then use:
+```
+/harvey-specter-uae [your UAE legal question]
+/harvey-specter-usa [your US legal question]
 ```
 
 ---
@@ -45,42 +75,74 @@ Most legal AI tools are useless. They either:
 - Give you generic Wikipedia summaries
 - Tell you to "consult a lawyer" for every question
 - Hallucinate laws that don't exist
-- Miss UAE-specific nuances entirely
+- Miss jurisdiction-specific nuances entirely
 
 **Harvey doesn't play that game.**
 
-This skill gives you actual legal analysis — specific UAE article citations, worked examples, risk assessments, and actionable recommendations. The kind of analysis that would cost you $500-1,500/hour from a BigLaw partner.
+These skills give you actual legal analysis — specific statutory citations, worked examples, risk assessments, and actionable recommendations. The kind of analysis that would cost you $500-1,500/hour from a BigLaw partner.
 
 Built by a founder who got tired of paying for basic answers.
 
 ---
 
-## What You Get
+## Harvey Specter UAE 🇦🇪
 
-### 🏢 Startup & Corporate
-- **Entity selection** — Mainland vs DIFC vs ADGM vs Free Zone decision tree
-- **2025 Companies Law** — Multiple share classes, drag-along/tag-along, re-domiciliation
-- **Shareholder agreements** — Actual clause language you can use
-- **SAFE & Convertible Notes** — UAE-specific mechanics + worked conversion math
-- **Corporate tax** — 9% rate, participation exemption, transfer pricing
+### Coverage
 
-### 🏥 Healthcare Compliance  
-- **DHA/DOH/MOHAP licensing** — Facility categories, requirements, timelines
-- **Home healthcare** — What you can and can't do, supervision ratios
-- **Professional licensing (PQR v3)** — Physician, nurse, allied health
-- **Advertising restrictions** — Social media dos and don'ts
+**Jurisdictions:**
+- UAE Mainland (Dubai, Abu Dhabi, Northern Emirates)
+- DIFC (Dubai International Financial Centre)
+- ADGM (Abu Dhabi Global Market)
+- Free Zones (DMCC, DIC, JAFZA, etc.)
 
-### 📝 Contract Review
-- **UAE Civil Code** — Article 246 (good faith), Article 257 (freedom of contract)
-- **3-tier checklist** — Fatal flaws → Significant issues → Optimization
-- **Template clauses** — Liability caps, termination, dispute resolution
-- **Governing law** — When to use UAE vs DIFC vs ADGM vs foreign law
+**Practice Areas:**
 
-### 👔 Employment Law
-- **2024 amendments** — MOHRE binding decisions, salary continuation
-- **Termination** — With cause vs without cause vs arbitrary dismissal
-- **Gratuity calculator** — Worked examples with real numbers
-- **Emiratisation** — Targets, penalties, fictitious employment risks
+| Area | What's Covered |
+|------|----------------|
+| **Startup & Corporate** | Entity selection, 2025 Companies Law, shareholder agreements, SAFE notes, corporate tax |
+| **Healthcare** | DHA/DOH/MOHAP licensing, home healthcare, PQR v3, advertising restrictions |
+| **Contracts** | UAE Civil Code, Article 246 (good faith), template clauses, governing law |
+| **Employment** | 2024 amendments, termination, gratuity calculator, Emiratisation |
+
+### Example Prompts
+
+```
+/harvey-specter-uae I'm raising a $2M seed round. Should I incorporate in DIFC or mainland?
+
+/harvey-specter-uae I run home nursing in Dubai. What do I need to expand to Abu Dhabi?
+
+/harvey-specter-uae Employee has been here 4 years, performance is bad. What's my exposure if I fire them?
+```
+
+---
+
+## Harvey Specter USA 🇺🇸
+
+### Coverage
+
+**Jurisdictions:**
+- Federal law
+- Delaware (default for startups)
+- State-specific guidance (California, New York, Texas, etc.)
+
+**Practice Areas:**
+
+| Area | What's Covered |
+|------|----------------|
+| **Startup & Corporate** | Delaware vs other states, C-Corp vs LLC, 83(b) elections, SAFE notes, fundraising |
+| **Employment** | At-will doctrine, FLSA, discrimination, non-competes (state-by-state) |
+| **Contracts** | UCC Article 2, common law, limitation of liability, choice of law |
+| **IP & Trademark** | Patents, USPTO trademark registration, trade secrets, DMCA |
+
+### Example Prompts
+
+```
+/harvey-specter-usa Should I incorporate in Delaware or Wyoming for my SaaS startup?
+
+/harvey-specter-usa Can I enforce a non-compete against an employee who's moving to California?
+
+/harvey-specter-usa What's the difference between filing a trademark myself vs using a lawyer?
+```
 
 ---
 
@@ -101,53 +163,19 @@ QUESTION PRESENTED
 [Specific legal question]
 
 SHORT ANSWER
-Likely Yes. Under Article 44(d) of the UAE Labour Law...
+Likely Yes. Under [specific statute/article]...
 
 DISCUSSION
-[Detailed analysis with specific article citations]
+[Detailed analysis with specific citations]
 
 RECOMMENDED ACTIONS
 1. Do this by [date]
 2. Then do this
 3. Get a real lawyer to review
 
-⚠️ Not legal advice. Consult a licensed UAE attorney.
+⚠️ Not legal advice. Consult a licensed attorney.
 ═══════════════════════════════════════════════════════════════
 ```
-
----
-
-## Installation
-
-### Claude Code
-
-```bash
-# Option 1: Direct install (if on skillsmp.com)
-/plugin install harvey-specter-uae@skillsmp
-
-# Option 2: From GitHub
-/plugin marketplace add github.com/keswin/harvey-specter-uae
-/plugin install harvey-specter-uae
-```
-
-### Claude.ai
-Upload the skill folder or install from the Skills marketplace.
-
----
-
-## Example Prompts
-
-**Startup:**
-> "I'm raising a $2M seed round. Investors from US, Saudi, UAE. Should I incorporate in DIFC or mainland?"
-
-**Healthcare:**
-> "I run home nursing in Dubai. What do I need to expand to Abu Dhabi?"
-
-**Contracts:**
-> "Review this SaaS agreement. I'm the customer. What should I push back on?"
-
-**Employment:**
-> "Employee has been here 4 years, performance is bad, no documented warnings. What's my exposure if I fire them?"
 
 ---
 
@@ -156,40 +184,22 @@ Upload the skill folder or install from the Skills marketplace.
 | Other Legal AI | Harvey Specter |
 |----------------|----------------|
 | "Consult a lawyer" | Actual analysis with citations |
-| Generic summaries | UAE-specific article numbers |
+| Generic summaries | Jurisdiction-specific statutes |
 | Hedged non-answers | Direct conclusions + risk levels |
-| "It depends" | "Likely yes, because Article 44(d)..." |
-| Outdated info | 2024/2025 law amendments included |
+| "It depends" | "Likely yes, because [specific law]..." |
+| Outdated info | 2024/2025 law updates included |
 
 ---
 
-## Coverage
+## Roadmap
 
-### Jurisdictions ✅
-- UAE Mainland (Dubai, Abu Dhabi, Northern Emirates)
-- DIFC (Dubai International Financial Centre)
-- ADGM (Abu Dhabi Global Market)
-- Free Zones (DMCC, DIC, JAFZA, etc.)
+- [x] UAE (DIFC, ADGM, Mainland, Free Zones)
+- [x] USA (Delaware, Federal, State-specific)
+- [ ] UK (Companies House, HMRC, Employment)
+- [ ] Singapore (ACRA, MAS, Employment)
+- [ ] India (MCA, RBI, Employment)
 
-### Practice Areas
-- ✅ Corporate/M&A/Startup
-- ✅ Healthcare Regulatory
-- ✅ Commercial Contracts
-- ✅ Employment/Labor
-- ⚠️ Tax (general guidance)
-- ❌ Litigation (get a real lawyer)
-- ❌ Criminal (definitely get a real lawyer)
-
----
-
-## Recent Law Updates
-
-| Law | What Changed |
-|-----|--------------|
-| Federal Decree-Law No. 20/2025 | LLCs can now have multiple share classes, drag-along/tag-along statutory |
-| Federal Decree-Law No. 9/2024 | MOHRE can issue binding decisions up to AED 50K, 2-year limitation |
-| DHA Manual v1.1 (Nov 2024) | Updated facility licensing categories |
-| PQR v3 (2024) | Unified professional qualifications across DHA/DOH/MOHAP |
+Want a jurisdiction added? Open an issue or submit a PR.
 
 ---
 
@@ -198,7 +208,7 @@ Upload the skill folder or install from the Skills marketplace.
 This is open source. Make it better.
 
 - 🐛 Found an error? Open an issue
-- 📝 Know more UAE law? Submit a PR
+- 📝 Know more law? Submit a PR
 - 🌟 Found it useful? Star the repo
 - 🔄 Fork it and build your own version
 

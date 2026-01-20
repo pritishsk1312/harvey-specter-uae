@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "harvey-specter-uae",
-      "source": ".",
+      "source": "./plugins/harvey-specter-uae",
       "description": "Elite legal AI for UAE business law - startup formation, healthcare licensing, employment law, and contracts"
     }
   ]
